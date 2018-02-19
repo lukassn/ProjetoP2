@@ -24,6 +24,7 @@ public class Caixa {
 		
 		
 	}
+
 	public void setCaixa(int valor) {
 		this.caixa = valor;
 	}

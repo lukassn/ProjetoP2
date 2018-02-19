@@ -3,8 +3,6 @@ package sistema;
 import excecoes.ExceptionsAposta;
 
 public class SeguroTaxa extends Seguro {
-
-
 	private ExceptionsAposta exA = new ExceptionsAposta();
 	private String string;
 	private double seguro;

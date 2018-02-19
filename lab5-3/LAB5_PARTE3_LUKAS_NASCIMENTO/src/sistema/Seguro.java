@@ -10,7 +10,6 @@ public abstract class Seguro{
 		
 	}
 	
-	
 	public abstract int getCusto();
 	
 	public abstract int getValorSeguro();
@@ -29,7 +28,6 @@ public abstract class Seguro{
 		result = prime * result + ((seguroValor == null) ? 0 : seguroValor.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {

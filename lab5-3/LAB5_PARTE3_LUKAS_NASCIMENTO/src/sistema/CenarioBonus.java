@@ -3,28 +3,6 @@ package sistema;
 import excecoes.ExceptionsCenario;
 
 public class CenarioBonus extends Cenario {
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = super.hashCode();
-		result = prime * result + bonus;
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (!super.equals(obj))
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		CenarioBonus other = (CenarioBonus) obj;
-		if (bonus != other.bonus)
-			return false;
-		return true;
-	}
-
 	private int bonus;
 	private ExceptionsCenario exC = new ExceptionsCenario();
 	
@@ -55,4 +33,25 @@ public class CenarioBonus extends Cenario {
 		this.bonus = bonus;
 	}
 	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + bonus;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		CenarioBonus other = (CenarioBonus) obj;
+		if (bonus != other.bonus)
+			return false;
+		return true;
+	}
 }

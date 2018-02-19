@@ -9,7 +9,7 @@ public class Cenario {
 	private ExceptionsCenario exC = new ExceptionsCenario();
 	private Caixa caixa;
 	private ArrayList<Aposta> apostas;
-	private ArrayList<Aposta> seguradas;
+	
 	
 	public Cenario(String descricao) {
 		try {
@@ -25,8 +25,8 @@ public class Cenario {
 		ocorreu        = false;
 		finalizado     = false;
 		apostas        = new ArrayList<>();
-		seguradas      = new ArrayList<>();
 	}
+	
 	public void setCaixa(int valor) {
 		caixa.setCaixa(valor);
 	}

@@ -37,6 +37,7 @@ public class SeguroValor extends Seguro {
 	public void setValorSeguro(int valor) {
 		this.seguro = valor;
 	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
